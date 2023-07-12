@@ -1,0 +1,16 @@
+.container {
+    background-image: linear-gradient(
+        65deg,
+        hsl(171deg 56% 35%) 0%,
+        hsl(170deg 100% 30%) 11%,
+        hsl(166deg 100% 32%) 22%,
+        hsl(162deg 100% 35%) 33%,
+        hsl(157deg 100% 38%) 44%,
+        hsl(153deg 100% 40%) 55%,
+        hsl(147deg 100% 43%) 66%,
+        hsl(141deg 100% 45%) 78%,
+        hsl(134deg 100% 48%) 89%,
+        hsl(117deg 100% 50%) 100%
+    );
+    height: 100vh;
+}
