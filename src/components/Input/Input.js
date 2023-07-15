@@ -5,9 +5,26 @@ import Card from "../UI/Card/Card";
 const Input = () => {
     const userEnter = useRef();
 
+    const sendData = async () => {
+        const request = await fetch(
+            "https://tasks-d7a51-default-rtdb.firebaseio.com/tasks.json",
+            {
+                method: "POST",
+                body: JSON.stringify({
+                    text: userEnter.current.value,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            }
+        );
+        const response = await request.json();
+        console.log(response);
+    };
+
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(userEnter.current.value);
+        sendData();
     };
 
     return (
